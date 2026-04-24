@@ -8,7 +8,7 @@ export default defineConfig({
     coverage: {
       provider: "v8",
       all: true,
-      include: ["src/services/scoring.ts"],
+      include: ["src/services/scoring.ts", "src/middleware/error.ts"],
       reporter: ["text", "lcov"],
       statements: 95,
       branches: 95,
